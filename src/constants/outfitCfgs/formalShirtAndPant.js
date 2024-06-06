@@ -1,10 +1,35 @@
+import base from '/src/assets/img/outfits/formal-shirt-and-pant/base.jpg'
+import enhancedBase from '/src/assets/img/outfits/formal-shirt-and-pant/base-levels-adjusted.jpg'
+
+import starsShirtTexture from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/stars-texture.jpg"
+import redShirtTexture from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/red-texture.jpg'
+import floral from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/floral-texture.jpg'
+import darkGreen from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/dark-green-texture.jpg'
+import blue from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/blue-texture.jpg'
+import blueCrosssed from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/blue-crossed-texture.jpg'
+
+import darkBluePantTexture from '/src/assets/img/outfits/formal-shirt-and-pant/pant/textures/dark-blue-texture.webp'
+import darkGrayPantTexture from '/src/assets/img/outfits/formal-shirt-and-pant/pant/textures/dark-gray-texture.jpg'
+import lightBluePantTexture from '/src/assets/img/outfits/formal-shirt-and-pant/pant/textures/light-blue-texture.jpg'
+import lightGrayPantTexture from '/src/assets/img/outfits/formal-shirt-and-pant/pant/textures/light-gray-texture.jpg'
+
+import fullMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/full-mask.jpg'
+import cuffMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/cuff-mask.jpg'
+import sleeveMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/sleeves-mask.jpg'
+import collarMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/collars-mask.jpg'
+import centerPattiMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/center-patti-mask.jpg'
+import pocketMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/pocket-mask.jpg'
+import mainBodyMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/main-body-mask.jpg'
+import fullPantMask from '/src/assets/img/outfits/formal-shirt-and-pant/pant/masks/full-mask.jpg'
+
+
 export const formalShirtAndPant = {
 	name: 'Formal Shirt and Pant',
 	baseImg: {
 		w: 3264,
 		h: 5463,
-		srcPath: '/img/outfits/formal-shirt-and-pant/base.jpg',
-		enhancedSrcPath: '/img/outfits/formal-shirt-and-pant/base-levels-adjusted.jpg',
+		srcPath: base,
+		enhancedSrcPath: enhancedBase
 	},
 	groups: {
 		shirt: {
@@ -12,60 +37,60 @@ export const formalShirtAndPant = {
 			availableTextures: {
 				stars: {
 					name: 'Stars',
-					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/stars-texture.jpg',
+					srcPath: starsShirtTexture
 				},
 				red: {
 					name: 'Red',
-					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/red-texture.jpg',
+					srcPath: redShirtTexture
 				},
 				floral: {
 					name: 'Floral',
-					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/floral-texture.jpg',
+					srcPath: floral
 				},
 				darkGreen: {
 					name: 'Dark Green',
-					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/dark-green-texture.jpg',
+					srcPath: darkGreen
 				},
 				blue: {
 					name: 'Blue',
-					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/blue-texture.jpg',
+					srcPath: blue
 				},
 				blueCrossed: {
 					name: 'Blue Crossed',
-					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/blue-crossed-texture.jpg',
+					srcPath: blueCrosssed
 				},
 			},
 			textureReplacementLayers: {
 				// full: {
 				// 	name: 'Full',
-				// 	maskSrcPath: '/img/outfits/formal-shirt-and-pant/shirt/masks/full-mask.jpg'
+				// 	maskSrcPath: fullMask,
 				// },
 				cuffs: {
 					name: 'Cuffs',
-					maskSrcPath: '/img/outfits/formal-shirt-and-pant/shirt/masks/cuff-mask.jpg'
+					maskSrcPath: cuffMask
 				},
 				sleeves: {
 					name: 'Sleeves',
-					maskSrcPath: '/img/outfits/formal-shirt-and-pant/shirt/masks/sleeves-mask.jpg',
-					// tilingOptions: {
-					// 	angle: 30
-					// }
+					maskSrcPath: sleeveMask,
+					tilingOptions: {
+						angle: 30
+					}
 				},
 				collars: {
 					name: 'Collars',
-					maskSrcPath: '/img/outfits/formal-shirt-and-pant/shirt/masks/collars-mask.jpg'
+					maskSrcPath: collarMask
 				},
 				centerPatti: {
 					name: 'Center patti',
-					maskSrcPath: '/img/outfits/formal-shirt-and-pant/shirt/masks/center-patti-mask.jpg'
+					maskSrcPath: centerPattiMask
 				},
 				pocket: {
 					name: 'Pocket',
-					maskSrcPath: '/img/outfits/formal-shirt-and-pant/shirt/masks/pocket-mask.jpg'
+					maskSrcPath: pocketMask
 				},
 				mainBody: {
 					name: 'Main body',
-					maskSrcPath: '/img/outfits/formal-shirt-and-pant/shirt/masks/main-body-mask.jpg',
+					maskSrcPath: mainBodyMask
 					// // this is optional
 					// tilingOptions: {
 					// 	scale: 0.5, // between 0-1. Default is 1
@@ -80,25 +105,25 @@ export const formalShirtAndPant = {
 			availableTextures: {
 				darkBlue: {
 					name: 'Dark Blue',
-					srcPath: '/img/outfits/formal-shirt-and-pant/pant/textures/dark-blue-texture.webp',
+					srcPath: darkBluePantTexture
 				},
 				darkGray: {
 					name: 'Dark Gray',
-					srcPath: '/img/outfits/formal-shirt-and-pant/pant/textures/dark-gray-texture.jpg',
+					srcPath: darkGrayPantTexture
 				},
 				lightBlue: {
 					name: 'Light Blue',
-					srcPath: '/img/outfits/formal-shirt-and-pant/pant/textures/light-blue-texture.jpg',
+					srcPath: lightBluePantTexture
 				},
 				lightGray: {
 					name: 'Light Gray',
-					srcPath: '/img/outfits/formal-shirt-and-pant/pant/textures/light-gray-texture.jpg',
+					srcPath: lightGrayPantTexture
 				},
 			},
 			textureReplacementLayers: {
 				full: {
 					name: 'Full',
-					maskSrcPath: '/img/outfits/formal-shirt-and-pant/pant/masks/full-mask.jpg'
+					maskSrcPath: fullPantMask
 				}
 			}
 		}
