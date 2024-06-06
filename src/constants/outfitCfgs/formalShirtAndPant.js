@@ -18,10 +18,6 @@ export const formalShirtAndPant = {
 					name: 'Red',
 					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/red-texture.jpg',
 				},
-				redCrossed: {
-					name: 'Red Crossed',
-					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/red-crossed-texture.jpg',
-				},
 				floral: {
 					name: 'Floral',
 					srcPath: '/img/outfits/formal-shirt-and-pant/shirt/textures/floral-texture.jpg',
@@ -82,10 +78,6 @@ export const formalShirtAndPant = {
 		pant: {
 			name: 'Pant',
 			availableTextures: {
-				brown: {
-					name: 'Brown',
-					srcPath: '/img/outfits/formal-shirt-and-pant/pant/textures/brown-texture.jpg',
-				},
 				darkBlue: {
 					name: 'Dark Blue',
 					srcPath: '/img/outfits/formal-shirt-and-pant/pant/textures/dark-blue-texture.webp',
