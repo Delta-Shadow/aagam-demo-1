@@ -1,5 +1,5 @@
-import base from '/src/assets/img/outfits/formal-shirt-and-pant/base.jpg'
-import enhancedBase from '/src/assets/img/outfits/formal-shirt-and-pant/base-levels-adjusted.jpg'
+import base         from '/src/assets/img/outfits/formal-shirt-and-pant/base.jpg'
+import enhancedBase from '/src/assets/img/outfits/formal-shirt-and-pant/enhanced-base.jpg'
 
 import starsShirtTexture from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/stars-texture.jpg"
 import redShirtTexture from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/red-texture.jpg'

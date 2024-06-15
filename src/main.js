@@ -9,6 +9,9 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 
+// Router
+import router from './router'
+
 // Components
 import App from './App.vue'
 
@@ -24,4 +27,7 @@ const vuetify = createVuetify({
 	},
 })
 
-createApp(App).use(vuetify).mount('#app')
+createApp(App)
+	.use(router)
+	.use(vuetify)
+	.mount('#app')
