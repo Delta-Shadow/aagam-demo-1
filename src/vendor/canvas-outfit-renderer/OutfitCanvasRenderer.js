@@ -91,7 +91,7 @@ export class OutfitCanvasRenderer extends CanvasRenderer {
 		)
 
 		// Create a temporary off-screen canvas for the group
-		const { w, h } = this.canvasDimensions
+		const { w, h } = this
 		const { canvas, ctx } = createCanvasInMemory(w, h)
 
 		// Compose all layers
@@ -112,7 +112,7 @@ export class OutfitCanvasRenderer extends CanvasRenderer {
 		)
 
 		// Create a temporary off-screen canvas for the group
-		const { w, h } = this.canvasDimensions
+		const { w, h } = this
 		const { canvas, ctx } = createCanvasInMemory(w, h)
 
 		// Compose all layers
@@ -128,7 +128,7 @@ export class OutfitCanvasRenderer extends CanvasRenderer {
 		const layerCfg = getLayerCfg(groupCfg, layerKey)
 
 		// Create a temporary off-screen canvas for this layer
-		const { w, h } = this.canvasDimensions
+		const { w, h } = this
 		const { canvas, ctx } = createCanvasInMemory(w, h)
 
 		// Draw the enhanced base image
@@ -153,7 +153,7 @@ export class OutfitCanvasRenderer extends CanvasRenderer {
 
 	#createLayerImgWithBaseImg(groupKey, layerKey) {
 		// Create a temporary off-screen canvas for this layer
-		const { w, h } = this.canvasDimensions
+		const { w, h } = this
 		const { canvas, ctx } = createCanvasInMemory(w, h)
 
 		// Draw the base image

@@ -226,8 +226,8 @@ export default {
 					align="center"
 				>
 					<v-sheet
-						width="419"
-						height="702"
+						width="100%"
+						height="90%"
 						class="d-flex align-center justify-center"
 						ref="rootEl"
 					>

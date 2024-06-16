@@ -4,29 +4,30 @@ export class CanvasRenderer {
 	#rootEl
 	#canvas
 	#ctx
-	#baseW
-	#baseH
 	#renderQueue
-	canvasDimensions
+	w
+	h
 
 	constructor(baseW, baseH, rootEl) {
 		this.#rootEl = rootEl
-		this.#baseW = baseW
-		this.#baseH = baseH
+		this.w = baseW
+		this.h = baseH
 
 		// Set up the canvas
-		const { w, h } = this.#computeCanvasDimensions()
-		const { canvas, ctx } = createCanvas(w, h)
-		this.#rootEl.append(canvas)
-
-		window.addEventListener('resize', () => {
-			const { w, h } = this.#computeCanvasDimensions()
-			this.canvasDimensions = { w, h }
-		})
-
+		const { canvas, ctx } = createCanvas(baseW, baseH)
 		this.#canvas = canvas
 		this.#ctx = ctx
-		this.canvasDimensions = { w, h }
+
+		// Size the canvas appropriately
+		this.#resizeCanvas()
+
+		// Resize handler
+		window.addEventListener('resize', () => {
+			this.#resizeCanvas()
+		})
+
+		// Add the canvas to the DOM
+		this.#rootEl.append(canvas)
 
 		// Initialize an empty render queue
 		this.#renderQueue = []
@@ -35,9 +36,12 @@ export class CanvasRenderer {
 		this.#initLoop()
 	}
 
-	#computeCanvasDimensions() {
+	#resizeCanvas() {
+		const { w, h } = this
 		const { clientWidth, clientHeight } = this.#rootEl
-		return maximiseWithinBounds(this.#baseW, this.#baseH, clientWidth, clientHeight)
+		const dims = maximiseWithinBounds(w, h, clientWidth, clientHeight)
+		this.#canvas.style.width = `${dims.w}px`
+		this.#canvas.style.height = `${dims.h}px`
 	}
 
 	#initLoop() {
@@ -55,7 +59,7 @@ export class CanvasRenderer {
 			// If a transition is not needed for this item
 			if (!renderItem.transition) {
 				// Draw it
-				const { w, h } = this.canvasDimensions
+				const { w, h } = this
 				this.#ctx.drawImage(renderItem.img, 0, 0, w, h)
 				// Remove it from the queue
 				this.#renderQueue.shift()
@@ -70,7 +74,7 @@ export class CanvasRenderer {
 				renderItem.transitionCounter += 0.008
 
 				// Compute properties from transitionCounter
-				const { w, h } = this.canvasDimensions
+				const { w, h } = this
 				const opacity = renderItem.transitionCounter
 				const intercept = 2 * h * renderItem.transitionCounter * 2
 
