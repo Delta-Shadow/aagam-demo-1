@@ -1,7 +1,7 @@
 <script>
 
-import outfitCfgs             from '/src/constants/outfitCfgs/index.js'
-import { createOutfitCanvasRenderer } from '/src/vendor/canvas-outfit-renderer/index.js'
+import outfitCfgs from '/src/constants/outfitCfgs'
+import { createOutfitCanvasRenderer } from '/src/vendor/canvas-outfit-renderer'
 
 export default {
 	name: 'CustomizeOutfitPage',
@@ -69,7 +69,7 @@ export default {
 	methods: {
 		createEntryInGroupTextureMap(groupKey) {
 			this.groupTextureMap[groupKey] = {
-				textureName: '',
+				textureKey: '',
 				textureProperties: {
 					scale: 1
 				}
@@ -77,22 +77,22 @@ export default {
 		},
 
 		isTextureItemSelected(groupKey, textureKey) {
-			return this.groupTextureMap[groupKey]?.textureName === textureKey
+			return this.groupTextureMap[groupKey]?.textureKey === textureKey
 		},
 
 		isBaseTextureSelected(groupKey) {
-			return this.groupTextureMap[groupKey] ? this.groupTextureMap[groupKey].textureName === '' : true
+			return this.groupTextureMap[groupKey] ? this.groupTextureMap[groupKey].textureKey === '' : true
 		},
 
 		handleTextureSelect(groupKey, textureKey) {
 			if (!this.groupTextureMap[groupKey])
 				this.createEntryInGroupTextureMap(groupKey)
-			this.groupTextureMap[groupKey].textureName = textureKey
+			this.groupTextureMap[groupKey].textureKey = textureKey
 		},
 
 		handleBaseTextureSelect(groupKey) {
 			if (this.groupTextureMap[groupKey])
-				this.groupTextureMap[groupKey].textureName = ''
+				this.groupTextureMap[groupKey].textureKey = ''
 		},
 
 		getSliderValue(groupKey) {
