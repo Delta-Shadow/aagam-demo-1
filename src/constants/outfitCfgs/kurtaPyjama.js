@@ -1,6 +1,12 @@
 import base         from '/src/assets/img/outfits/kurta-pyjama/base.png'
 import enhancedBase from '/src/assets/img/outfits/kurta-pyjama/enhanced-base.png'
 
+import texture1 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/1-texture.jpg"
+import texture2 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/2-texture.jpg"
+import texture3 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/3-texture.jpg"
+import texture4 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/4-texture.jpg"
+import texture5 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/5-texture.jpg"
+
 import starsKurtaTexture from "/src/assets/img/outfits/kurta-pyjama/kurta/textures/stars-texture.jpg"
 import redKurtaTexture from '/src/assets/img/outfits/kurta-pyjama/kurta/textures/red-texture.jpg'
 import floral from '/src/assets/img/outfits/kurta-pyjama/kurta/textures/floral-texture.jpg'
@@ -56,6 +62,26 @@ export const kurtaPyjama = {
 				blueCrossed: {
 					name: 'Blue Crossed',
 					srcPath: blueCrosssed
+				},
+				one: {
+					name: 'One',
+					srcPath: texture1
+				},
+				two: {
+					name: 'Two',
+					srcPath: texture2
+				},
+				three: {
+					name: 'Three',
+					srcPath: texture3
+				},
+				four: {
+					name: 'Four',
+					srcPath: texture4
+				},
+				five: {
+					name: 'Five',
+					srcPath: texture5
 				},
 			},
 			textureReplacementLayers: {
