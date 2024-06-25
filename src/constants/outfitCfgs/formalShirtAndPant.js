@@ -6,6 +6,10 @@ import texture2 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textur
 import texture3 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/3-texture.jpg"
 import texture4 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/4-texture.jpg"
 import texture5 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/5-texture.jpg"
+import texture6 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/6-texture.jpg"
+import texture7 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/7-texture.jpg"
+import texture8 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/8-texture.jpg"
+import texture9 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/9-texture.jpg"
 
 import starsShirtTexture from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/stars-texture.jpg"
 import redShirtTexture from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/red-texture.jpg'
@@ -27,7 +31,6 @@ import centerPattiMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt
 import pocketMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/pocket-mask.jpg'
 import mainBodyMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/main-body-mask.jpg'
 import fullPantMask from '/src/assets/img/outfits/formal-shirt-and-pant/pant/masks/full-mask.jpg'
-
 
 export const formalShirtAndPant = {
 	name: 'Formal Shirt and Pant',
@@ -84,6 +87,22 @@ export const formalShirtAndPant = {
 				five: {
 					name: 'Five',
 					srcPath: texture5
+				},
+				six: {
+					name: 'Six',
+					srcPath: texture6
+				},
+				seven: {
+					name: 'Seven',
+					srcPath: texture7
+				},
+				eight: {
+					name: 'Eight',
+					srcPath: texture8
+				},
+				nine: {
+					name: 'Nine',
+					srcPath: texture9
 				},
 			},
 			textureReplacementLayers: {

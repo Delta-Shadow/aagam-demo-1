@@ -6,6 +6,10 @@ import texture2 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textur
 import texture3 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/3-texture.jpg"
 import texture4 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/4-texture.jpg"
 import texture5 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/5-texture.jpg"
+import texture6 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/6-texture.jpg"
+import texture7 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/7-texture.jpg"
+import texture8 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/8-texture.jpg"
+import texture9 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/9-texture.jpg"
 
 import starsKurtaTexture from "/src/assets/img/outfits/kurta-pyjama/kurta/textures/stars-texture.jpg"
 import redKurtaTexture from '/src/assets/img/outfits/kurta-pyjama/kurta/textures/red-texture.jpg'
@@ -82,6 +86,22 @@ export const kurtaPyjama = {
 				five: {
 					name: 'Five',
 					srcPath: texture5
+				},
+				six: {
+					name: 'Six',
+					srcPath: texture6
+				},
+				seven: {
+					name: 'Seven',
+					srcPath: texture7
+				},
+				eight: {
+					name: 'Eight',
+					srcPath: texture8
+				},
+				nine: {
+					name: 'Nine',
+					srcPath: texture9
 				},
 			},
 			textureReplacementLayers: {
