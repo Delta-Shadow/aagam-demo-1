@@ -10,6 +10,11 @@ import texture6 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textur
 import texture7 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/7-texture.jpg"
 import texture8 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/8-texture.jpg"
 import texture9 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/9-texture.jpg"
+import texture10 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/10-texture.jpg"
+import texture10_1 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/10-1-texture.jpg"
+import texture11 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/11-texture.jpg"
+import texture12 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/12-texture.jpg"
+import texture13 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/13-texture.jpg"
 
 import darkGreen from '/src/assets/img/outfits/suit/vest/textures/dark-green-texture.jpg'
 import blue from '/src/assets/img/outfits/suit/vest/textures/blue-texture.jpg'
@@ -89,6 +94,26 @@ export const suit = {
 					name: 'Nine',
 					srcPath: texture9
 				},
+				ten: {
+					name: 'Ten',
+					srcPath: texture10
+				},
+				ten_one: {
+					name: 'Ten One',
+					srcPath: texture10_1
+				},
+				eleven: {
+					name: 'Eleven',
+					srcPath: texture11
+				},
+				twelve: {
+					name: 'Twelve',
+					srcPath: texture12
+				},
+				thirteen: {
+					name: 'Thirteen',
+					srcPath: texture13
+				}
 			},
 			textureReplacementLayers: {
 				arms: {

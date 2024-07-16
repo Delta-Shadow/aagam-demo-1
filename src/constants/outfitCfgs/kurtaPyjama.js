@@ -10,6 +10,11 @@ import texture6 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textur
 import texture7 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/7-texture.jpg"
 import texture8 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/8-texture.jpg"
 import texture9 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/9-texture.jpg"
+import texture10 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/10-texture.jpg"
+import texture10_1 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/10-1-texture.jpg"
+import texture11 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/11-texture.jpg"
+import texture12 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/12-texture.jpg"
+import texture13 from "/src/assets/img/outfits/formal-shirt-and-pant/shirt/textures/13-texture.jpg"
 
 import starsKurtaTexture from "/src/assets/img/outfits/kurta-pyjama/kurta/textures/stars-texture.jpg"
 import redKurtaTexture from '/src/assets/img/outfits/kurta-pyjama/kurta/textures/red-texture.jpg'
@@ -29,7 +34,6 @@ import cuffsMask from '/src/assets/img/outfits/kurta-pyjama/kurta/masks/kurta py
 import rightArmMask from '/src/assets/img/outfits/kurta-pyjama/kurta/masks/kurta pyajama right arm mask.png'
 import vestMask from '/src/assets/img/outfits/kurta-pyjama/kurta/masks/Kurta vest mask.png'
 import fullPyjamaMask from '/src/assets/img/outfits/kurta-pyjama/pyjama/masks/full-mask.png'
-
 
 export const kurtaPyjama = {
 	name: 'Kurta',
@@ -103,6 +107,26 @@ export const kurtaPyjama = {
 					name: 'Nine',
 					srcPath: texture9
 				},
+				ten: {
+					name: 'Ten',
+					srcPath: texture10
+				},
+				ten_one: {
+					name: 'Ten One',
+					srcPath: texture10_1
+				},
+				eleven: {
+					name: 'Eleven',
+					srcPath: texture11
+				},
+				twelve: {
+					name: 'Twelve',
+					srcPath: texture12
+				},
+				thirteen: {
+					name: 'Thirteen',
+					srcPath: texture13
+				}
 			},
 			textureReplacementLayers: {
 				cuffs: {
