@@ -4,6 +4,9 @@ export function loadImg(srcPath) {
 		img.addEventListener('load', () => {
 			resolve(img)
 		})
+		img.addEventListener('error', e => {
+			console.error(`Could not load img ${srcPath}`)
+		})
 		img.src = srcPath
 	})
 }
