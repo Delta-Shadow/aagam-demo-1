@@ -24,6 +24,13 @@ import t23 from "/src/assets/img/textures/23.webp"
 import t24 from "/src/assets/img/textures/24.jpg"
 import t25 from "/src/assets/img/textures/25.jpg"
 import t26 from "/src/assets/img/textures/26.jpg"
+import t27 from "/src/assets/img/textures/27.jpg"
+import t28 from "/src/assets/img/textures/28.jpg"
+import t29 from "/src/assets/img/textures/29.jpg"
+import t30 from "/src/assets/img/textures/30.jpg"
+import t31 from "/src/assets/img/textures/31.jpg"
+import t32 from "/src/assets/img/textures/32.jpg"
+import t33 from "/src/assets/img/textures/33.jpg"
 
 export const textureCfgs = Object.fromEntries(
 	[
@@ -52,7 +59,14 @@ export const textureCfgs = Object.fromEntries(
 		// t23,
 		// t24,
 		// t25,
-		// t26
+		// t26,
+		t27,
+		t28,
+		t29,
+		t30,
+		t31,
+		t32,
+		t33,
 	].map((srcPath, i) => [
 		`t${i+1}`,
 		{
