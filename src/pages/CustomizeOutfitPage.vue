@@ -186,7 +186,7 @@ export default {
 										@end="handleSliderMoved($event, groupItem.value)"
 										:disabled="loading"
 										min="0.05"
-										max="2"
+										max="20"
 										thumb-label
 										messages="Scale the texture"
 									>
