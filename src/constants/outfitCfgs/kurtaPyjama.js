@@ -7,7 +7,7 @@ import cuffsMask from '/src/assets/img/outfits/kurta-pyjama/kurta/masks/kurta py
 import rightArmMask from '/src/assets/img/outfits/kurta-pyjama/kurta/masks/kurta pyajama right arm mask.png'
 import vestMask from '/src/assets/img/outfits/kurta-pyjama/kurta/masks/Kurta vest mask.png'
 import fullPyjamaMask from '/src/assets/img/outfits/kurta-pyjama/pyjama/masks/full-mask.png'
-import { textureCfgs } from '/src/constants/textureCfgs.js'
+import { textureCfgsSetB } from '/src/constants/textureCfgs.js'
 
 export const kurtaPyjama = {
 	name: 'Kurta',
@@ -20,7 +20,7 @@ export const kurtaPyjama = {
 	groups: {
 		kurta: {
 			name: 'Kurta',
-			availableTextures: textureCfgs,
+			availableTextures: textureCfgsSetB,
 			textureReplacementLayers: {
 				cuffs: {
 					name: 'Cuffs',
@@ -52,7 +52,7 @@ export const kurtaPyjama = {
 		},
 		pyjama: {
 			name: 'Pyjama',
-			availableTextures: textureCfgs,
+			availableTextures: textureCfgsSetB,
 			textureReplacementLayers: {
 				full: {
 					name: 'Full',

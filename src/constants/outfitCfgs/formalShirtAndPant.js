@@ -10,7 +10,7 @@ import pocketMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/mask
 import mainBodyMask from '/src/assets/img/outfits/formal-shirt-and-pant/shirt/masks/main-body-mask.jpg'
 import fullPantMask from '/src/assets/img/outfits/formal-shirt-and-pant/pant/masks/full-mask.jpg'
 
-import { textureCfgs } from '/src/constants/textureCfgs.js'
+import { textureCfgsSetA } from '/src/constants/textureCfgs.js'
 
 export const formalShirtAndPant = {
 	name: 'Formal Shirt and Pant',
@@ -23,7 +23,7 @@ export const formalShirtAndPant = {
 	groups: {
 		shirt: {
 			name: 'Shirt',
-			availableTextures: textureCfgs,
+			availableTextures: textureCfgsSetA,
 			textureReplacementLayers: {
 				// full: {
 				// 	name: 'Full',
@@ -66,7 +66,7 @@ export const formalShirtAndPant = {
 		},
 		pant: {
 			name: 'Pant',
-			availableTextures: textureCfgs,
+			availableTextures: textureCfgsSetA,
 			textureReplacementLayers: {
 				full: {
 					name: 'Full',

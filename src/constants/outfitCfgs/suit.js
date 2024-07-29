@@ -5,7 +5,7 @@ import shirtMask from '/src/assets/img/outfits/suit/shirt/masks/Shirt mask.png'
 import armsMask from '/src/assets/img/outfits/suit/vest/masks/Suit Arms Mask.png'
 import mainMask from '/src/assets/img/outfits/suit/vest/masks/SUIT Vest Mask .png'
 import fullPantMask from '/src/assets/img/outfits/suit/pant/masks/pant-mask.png'
-import { textureCfgs } from '/src/constants/textureCfgs.js'
+import { textureCfgsSetC } from '/src/constants/textureCfgs.js'
 
 export const suit = {
 	name: 'Suit',
@@ -18,7 +18,7 @@ export const suit = {
 	groups: {
 		vest: {
 			name: 'Vest',
-			availableTextures: textureCfgs,
+			availableTextures: textureCfgsSetC,
 			textureReplacementLayers: {
 				arms: {
 					name: 'Arms',
@@ -32,7 +32,7 @@ export const suit = {
 		},
 		shirt: {
 			name: 'Shirt',
-			availableTextures: textureCfgs,
+			availableTextures: textureCfgsSetC,
 			textureReplacementLayers: {
 				main: {
 					name: 'Main',
@@ -42,7 +42,7 @@ export const suit = {
 		},
 		pant: {
 			name: 'Pant',
-			availableTextures: textureCfgs,
+			availableTextures: textureCfgsSetC,
 			textureReplacementLayers: {
 				full: {
 					name: 'Full',
